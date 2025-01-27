@@ -2,8 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "./pages/Layout";
 import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
-import SongDetailPage from "./pages/SongDetailPage";
-import SongEditPage from "./pages/SongEditPage";
 
 const router = createBrowserRouter([
   {
@@ -12,16 +10,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        index: true,
         element: <HomePage />,
-      },
-      {
-        path: "/song/:id",
-        element: <SongDetailPage />,
-      },
-      {
-        path: "/song_edit",
-        element: <SongEditPage />,
       },
     ],
   },
