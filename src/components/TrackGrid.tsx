@@ -18,7 +18,7 @@ const TrackGrid = () => {
   }, []);
 
   return (
-    <SimpleGrid columns={{ sm: 3, md: 5, lg: 7, xl: 9 }} padding="10px" gap={6}>
+    <SimpleGrid columns={{ sm: 2, md: 4, xl: 6 }} padding="10px" gap={6}>
       {isLoading &&
         skeletons.map((skeleton) => (
           <TrackCardContainer key={skeleton}>

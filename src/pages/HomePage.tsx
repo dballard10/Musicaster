@@ -5,6 +5,7 @@ import {
   GridItem,
   Show,
   useBreakpointValue,
+  Text,
 } from "@chakra-ui/react";
 import TrackGrid from "../components/TrackGrid";
 
@@ -19,12 +20,12 @@ const HomePage = () => {
 
   return (
     <Grid
-      templateAreas={{ base: "main", lg: "aside main" }}
-      templateColumns={{ base: "1fr", lg: "250px 1fr" }}
+      templateAreas={{ base: `"main"`, lg: `"aside main"` }}
+      templateColumns={{ base: "1fr", lg: "200px 1fr" }}
     >
       <Show when={isLargeScreen}>
-        <GridItem area="aside" paddingX={5}>
-          <p>Aside</p>
+        <GridItem area="aside" paddingX={5} paddingY={2}>
+          <Text>Aside</Text>
         </GridItem>
       </Show>
       <GridItem area="main">
