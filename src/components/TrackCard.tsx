@@ -1,4 +1,4 @@
-import { Card, CardBody, Heading, Image, Text } from "@chakra-ui/react";
+import { Card, CardBody, Heading, Image, Link } from "@chakra-ui/react";
 import trackImage from "../assets/DefaultTrackImage.png";
 
 // interface Props {
@@ -10,8 +10,8 @@ const TrackCard = () => {
     <Card.Root>
       <Image src={trackImage} />
       <CardBody>
-        <Heading fontSize="2xl">
-          <Text>Track Name</Text>
+        <Heading fontSize="1xl">
+          <Link href="/tracks/1">Track Name</Link>
         </Heading>
       </CardBody>
     </Card.Root>
