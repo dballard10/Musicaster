@@ -1,5 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import TrackCard from "./TrackCard";
+import TrackCardContainer from "./TrackCardContainer";
 // import TrackCardContainer from "./TrackCardContainer";
 // import TrackCardSkeleton from "./TrackCardSkeleton";
 // import { useEffect, useState } from "react";
@@ -20,24 +21,40 @@ const TrackGrid = () => {
   // }, []);
 
   return (
-    <SimpleGrid columns={{ sm: 2, md: 3, lg: 5, xl: 7 }} padding="10px" gap={6}>
+    <SimpleGrid columns={{ sm: 3, md: 5, lg: 7, xl: 9 }} padding="10px" gap={6}>
       {/* {isLoading &&
         skeletons.map((skeleton) => (
           <TrackCardContainer>
             <TrackCardSkeleton />
           </TrackCardContainer>
         ))} */}
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
-      <TrackCard />
+      <TrackCardContainer>
+        <TrackCard />
+      </TrackCardContainer>
+      <TrackCardContainer>
+        <TrackCard />
+      </TrackCardContainer>
+      <TrackCardContainer>
+        <TrackCard />
+      </TrackCardContainer>
+      <TrackCardContainer>
+        <TrackCard />
+      </TrackCardContainer>
+      <TrackCardContainer>
+        <TrackCard />
+      </TrackCardContainer>
+      <TrackCardContainer>
+        <TrackCard />
+      </TrackCardContainer>
+      <TrackCardContainer>
+        <TrackCard />
+      </TrackCardContainer>
+      <TrackCardContainer>
+        <TrackCard />
+      </TrackCardContainer>
+      <TrackCardContainer>
+        <TrackCard />
+      </TrackCardContainer>
     </SimpleGrid>
   );
 };
